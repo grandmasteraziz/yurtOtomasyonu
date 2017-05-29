@@ -1,0 +1,61 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage2" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div class="container">
+        <div class="row">
+<div class="col-lg-12 ">
+    <!-- üst kısım banner bootstrap -->
+  <!-- <img src="images/yurtbanner.jpg" width="1170" height="150" /> -->
+    <asp:Image ID="PoweredByImage" runat="server" ImageUrl="~/images/yurtbanner.jpg"  width="1170" height="150"
+    AlternateText="Banner" />
+
+</div>
+
+</div>
+<div class="row">
+<div class="col-lg-4 ">
+    <div class="list-group">
+  <a href="#" class="list-group-item active">
+    Kategoriler
+  </a>
+  <a href="Default.aspx" class="list-group-item" runat="server">Anasayfa</a>
+  <a href="OgrenciLogin.aspx" class="list-group-item" runat="server">Öğrenci Giriş</a>
+  <a href="YoneticiLogin.aspx" class="list-group-item" runat="server">Yönetici Giriş</a>
+  <a href="Hakkimizda.aspx" class="list-group-item" runat="server">Hakkımızda</a>
+  <a href="iletisim.aspx" class="list-group-item" runat="server">iletişim</a>
+</div>
+
+
+
+
+
+
+
+</div>
+<div class="col-lg-8 "><!--içerik -->
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+
+</div>
+</div>
+
+
+        <div class="row">
+<div class="col-lg-12 text-center ">Tüm Hakları Saklıdır. &copy; </div>
+</div>
+
+
+    </div>
+    </form>
+</body>
+</html>
